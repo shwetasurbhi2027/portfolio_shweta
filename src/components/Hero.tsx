@@ -9,6 +9,18 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-slate-900 to-black">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center text-center space-y-12">
+          {/* Profile Image */}
+          <div className="relative mb-8">
+            <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 via-purple-400 to-teal-400 shadow-2xl">
+              <img 
+                src="/lovable-uploads/b76f3581-9629-425c-8fc1-1562a4c4afe6.png" 
+                alt="Shweta Surbhi" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-400/20 via-purple-400/20 to-teal-400/20"></div>
+          </div>
+
           {/* Name and Title */}
           <div className="mb-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 min-h-[200px] lg:min-h-[160px]">
@@ -26,26 +38,13 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Profile Image and CGPA */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 via-purple-400 to-teal-400 shadow-2xl">
-                <img 
-                  src="/lovable-uploads/b76f3581-9629-425c-8fc1-1562a4c4afe6.png" 
-                  alt="Shweta Surbhi" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-400/20 via-purple-400/20 to-teal-400/20"></div>
+          {/* CGPA Card */}
+          <div className="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700">
+            <h2 className="text-2xl font-bold text-gray-200 mb-4 text-center">Current CGPA</h2>
+            <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent text-center">
+              8.72
             </div>
-            
-            <div className="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700">
-              <h2 className="text-2xl font-bold text-gray-200 mb-4 text-center">Current CGPA</h2>
-              <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent text-center">
-                8.72
-              </div>
-              <p className="text-gray-400 mt-2 text-center">Latest SGPA: 9.45</p>
-            </div>
+            <p className="text-gray-400 mt-2 text-center">Latest SGPA: 9.45</p>
           </div>
           
           {/* Contact Info */}
