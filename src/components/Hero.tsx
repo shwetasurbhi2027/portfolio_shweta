@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
 
           {/* Name and Title */}
-          <div className="mb-8">
+          <div className="mb-0">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 min-h-[200px] lg:min-h-[160px]">
               <TypingAnimation 
                 text="Shweta Surbhi" 
